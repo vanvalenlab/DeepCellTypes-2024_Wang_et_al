@@ -1,0 +1,2192 @@
+Tissue-Breast/Keren_New_MIBI:
+    channels_kept:
+        CD163: CD163
+        MECA-79: MECA-79
+        CD68: CD68
+        CD4: CD4
+        SOX10: SOX10
+        CD103: CD103
+        TCF1TCF7: TCF1 # combined into TCF1, might not be the best choice
+        Granzyme B: GZMB
+        CD56: CD56
+        CD31: CD31
+        CD14: CD14
+        Ki67: Ki67
+        IDO-1: IDO
+        Foxp3: FoxP3
+        CD8: CD8
+        COL1A1: COL1
+        HLA-DR-DP-DQ: HLA-Class-2
+        TIM-3: TIM3
+        PD-1: PD1
+        SMA: SMA
+        LAG-3: LAG3
+        CD11c: CD11c
+        CD69: CD69
+        HLA-class-1-A-B-C: HLA-Class-1
+        CD45RA: CD45RA
+        CD3: CD3
+        DC-SIGN: CD209
+        CD21: CD21
+        CD274: PDL1
+        MelanA: MelanA
+        CD20: CD20
+        S100A9-Calprotectin: Calprotectin
+        CD45: CD45
+        Tox-Tox2: Tox-Tox2
+        CD45RO: CD45RO
+        CD206: CD206
+        CCR7: CCR7
+    channels_dropped:
+        - dsDNA
+        - Bax
+Tissue-Breast/Keren_TNBC_MIBI:
+    channels_kept:
+        Lag3: LAG3
+        CD163: CD163
+        p53: p53
+        FoxP3: FoxP3
+        Keratin17: CK17
+        Beta-catenin: Beta-catenin
+        HLA-Class-1: HLA-Class-1
+        PDL1: PDL1
+        CD138: CD138
+        CD68: CD68
+        CD4: CD4
+        EGFR: EGFR
+        CD56: CD56
+        PanCK: PanCK
+        CD31: CD31
+        Ki67: Ki67
+        CD8: CD8
+        IDO: IDO
+        CD16: CD16
+        SMA: SMA
+        CD209: CD209
+        CD11c: CD11c
+        Keratin6: CK6
+        CD3: CD3
+        HLA-DR: HLA-Class-2
+        CD63: CD63
+        PD1: PD1
+        CD20: CD20
+        CD45: CD45
+        Vimentin: Vimentin
+        CD45RO: CD45RO
+        MPO: MPO
+        OX40: OX40
+        CD11b: CD11b
+    channels_dropped:
+        - H3K9ac # TODO: what does it do?
+        - H3K27me3 # TODO: what does it do?
+        - CSF-1R
+        - B7H3
+        - Fe
+        - Si
+        - sum of H3K27me3, H3K9ac, and dsDNA
+        - dsDNA
+        - sum_PanCK_CD45
+        - C
+        - Ca
+        - background
+        - Ta
+        - P
+        - Na
+        - Au
+        - pS6
+# Tissue-Breast/Liu_Validation_MIBI:
+#     channels_kept:
+#         CD56: CD56
+#         PAX5: PAX5
+#         PanCK: PanCK
+#         HLA-DR: HLA-Class-2
+#         CD31: CD31
+#         CD11c: CD11c
+#         CD20: CD20
+#         CD45: CD45
+#         CD4: CD4
+#         Vimentin: Vimentin
+#         CD8: CD8
+#         CD68: CD68
+#         CD3: CD3
+#     channels_dropped:
+#         - HLA class I and Na-K-ATPase
+#         - sum_PanCK_CD45
+#         - dsDNA
+#         - B-tubulin
+Tissue-Breast/Risom_DCIS_MIBI:
+    channels_kept:
+        HER2: HER2
+        HIF1a: HIF1A
+        CK7: CK7
+        PDL1: PDL1
+        VIM: Vimentin
+        CD68: CD68
+        CD4: CD4
+        COX2: COX2
+        ER: ER
+        CD56: CD56
+        IDO1: IDO
+        COL1: COL1
+        P63: P63
+        PanCK: PanCK
+        CD31: CD31
+        CD14: CD14
+        Ki67: Ki67
+        GZMB: GZMB
+        CD8: CD8
+        MMP9: MMP9
+        SMA: SMA
+        AR: AR
+        Tryptase: Tryptase
+        CD11c: CD11c
+        HLADRDPDQ: HLA-Class-2
+        CD3: CD3
+        CK5: CK5
+        E-cadherin: E-cadherin
+        FOXP3: FoxP3
+        CD20: CD20
+        FAP: FAP
+        CD45: CD45
+        GLUT1: GLUT1
+        MPO: MPO
+        PD1: PD1
+        CD44: CD44
+        CD36: CD36
+    channels_dropped:
+        - HH3
+        - Ca40
+        - P
+        - sum of P and Histone H3
+        - Au
+        - C
+        - sum_PanCK_CD45
+        - pS6
+Tissue-GI/Hartmann_CRC_MIBI:
+    channels_kept:
+        GLUT1: GLUT1
+        HK1: HK1
+        PKM2: PKM2
+        CPT1A: CPT1A
+        CD68: CD68
+        CD4: CD4
+        XBP1: XBP1
+        CD57: CD57
+        CD31: CD31
+        CD14: CD14
+        Ki67: Ki67
+        CD8: CD8
+        CK: PanCK
+        CD98: CD98
+        Na-K-ATPase: Na-K-ATPase
+        HIF1A: HIF1A
+        ASCT2: ASCT2
+        CD11c: CD11c
+        CD39: CD39
+        CD3: CD3
+        NRF2_p: NRF2
+        E-cadherin: E-cadherin
+        PD1: PD1
+        CD45: CD45
+        Vimentin: Vimentin
+        CD36: CD36
+    channels_dropped:
+        - Histone H3
+        - sum_CD45_E-cadherin_Na-K-ATPase
+        - SMA # no smooth muscle reported, but SMA express very strongly
+        - LDHA
+        - S6_p
+        - ATP5A
+        - SDHA
+        - IDH
+        - G6PD
+        - CS
+        - VDAC1
+Tissue-GI/Hickey_Colon_CODEX:
+    channels_kept:
+        Intelectin-1: Intelectin-1
+        CD66: CD66
+        Mucin-2: MUC2
+        Syndecan-1: CD138
+        CD163: CD163
+        CDX2: CDX2
+        NKG2D: NKG2D
+        c-kit: c-kit
+        CD19: CD19
+        Collagen IV: Col4
+        CD4: CD4
+        CD68: CD68
+        CD56: CD56
+        alpha defensin 5: DEFA5
+        CD57: CD57
+        CD31: CD31
+        Synaptophysin: Synaptophysin
+        Ki67: Ki67
+        panCK: PanCK
+        Bcl-2: Bcl-2
+        CD8: CD8
+        CD34: CD34
+        CD49f: CD49f
+        CD16: CD16
+        SMA: SMA
+        CD11c: CD11c
+        Chromogranin A: CgA
+        CD90: CD90
+        CD123: CD123
+        CD69: CD69
+        SOX9: SOX9
+        CD15: CD15
+        CD3: CD3
+        CD49a: CD49a
+        CD21: CD21
+        CD7: CD7
+        Olfactomedin-4: OLFM4
+        Mucin-1: MUC1
+        HLA-DR: HLA-Class-2
+        CD38: CD38
+        CD127: CD127
+        FAP: FAP
+        CD25: CD25
+        CD45: CD45
+        Podoplanin: PDPN
+        Vimentin: Vimentin
+        CD45RO: CD45RO
+        Mucin-6: MUC6
+        CD44: CD44
+        CD206: CD206
+        KLRB1: CD161
+        CD36: CD36
+    channels_dropped:
+        - HOECHST
+        - sum_panCK_CD45
+        - DRAQ5
+Tissue-GI/Keren_GVHD_MIBI:
+    channels_kept:
+        CD163: CD163
+        Calprotectin: Calprotectin
+        PDL1: PDL1
+        Collagen I: COL1
+        HLA-DRDPDQ: HLA-Class-2
+        CD4: CD4
+        CD68: CD68
+        CD103: CD103
+        Granzyme B: GZMB
+        CD56: CD56
+        Mucin: MUC2 # because they say it's expected to express for goblet cells
+        IgA: IgA
+        CD31: CD31
+        CD14: CD14
+        panCK: PanCK
+        Ki67: Ki67
+        Lysozyme: Lysozyme
+        CD8: CD8
+        Na-K-ATPase: Na-K-ATPase
+        IDO: IDO
+        TCF1: TCF1
+        SMA: SMA
+        CD209: CD209
+        Tryptase: Tryptase
+        Chromogranin A: CgA
+        CD69: CD69
+        CD15: CD15
+        CD45RA: CD45RA
+        CD3: CD3
+        HLA class I: HLA-Class-1
+        CD38: CD38
+        E-cadherin: E-cadherin
+        FOXP3: FoxP3
+        CD20: CD20
+        PD1: PD1
+        CD45: CD45
+        Vimentin: Vimentin
+        CD45RO: CD45RO
+        CD206: CD206
+    channels_dropped:
+        - dsDNA
+# Tissue-GI/Liu_Validation_MIBI:
+#     channels_kept:
+#         CD56: CD56
+#         PAX5: PAX5
+#         PanCK: PanCK
+#         HLA-DR: HLA-Class-2
+#         CD31: CD31
+#         CD11c: CD11c
+#         CD20: CD20
+#         CD45: CD45
+#         CD4: CD4
+#         Vimentin: Vimentin
+#         CD8: CD8
+#         CD68: CD68
+#         CD3: CD3
+#     channels_dropped:
+#         - HLA class I and Na-K-ATPase
+#         - sum_PanCK_CD45
+#         - dsDNA
+#         - B-tubulin
+# Tissue-Immune/Liu_Validation_MIBI:
+#     channels_kept:
+#         CD56: CD56
+#         PAX5: PAX5
+#         PanCK: PanCK
+#         HLA-DR: HLA-Class-2
+#         CD31: CD31
+#         CD11c: CD11c
+#         CD20: CD20
+#         CD45: CD45
+#         CD4: CD4
+#         Vimentin: Vimentin
+#         CD8: CD8
+#         CD68: CD68
+#         CD3: CD3
+#     channels_dropped:
+#         - HLA class I and Na-K-ATPase
+#         - sum_PanCK_CD45
+#         - dsDNA
+#         - B-tubulin
+Tissue-Lung/McCaffrey_TB_MIBI:
+    channels_kept:
+        IFNg: IFNg
+        CD163: CD163
+        PDL1: PDL1
+        Calprotectin: Calprotectin
+        Collagen I: COL1
+        CD68: CD68
+        CD4: CD4
+        CD103: CD103
+        LAG3: LAG3
+        CD31: CD31
+        CD14: CD14
+        panCK: PanCK
+        Ki67: Ki67
+        CD8: CD8
+        Na-K-ATPase: Na-K-ATPase
+        IDO: IDO
+        CD16: CD16
+        SMA: SMA
+        CD209: CD209
+        CD11c: CD11c
+        iNOS: iNOS
+        CD3: CD3
+        HLA class I: HLA-Class-1
+        mast cell chymase/tryptase: Tryptase
+        HLA-DR: HLA-Class-2
+        E-cadherin: E-cadherin
+        FOXP3: FoxP3
+        CD20: CD20
+        PD1: PD1
+        CD45: CD45
+        MPO: MPO
+        Vimentin: Vimentin
+        gdTCR: gdTCR
+        CD206: CD206
+        CD11b: CD11b
+        CD36: CD36
+    channels_dropped:
+        - H3K9ac
+        - Na
+        - Histone H3
+        - C
+        - Au
+Tissue-Lung/Sorin_Lung_IMC:
+    channels_kept:
+        CD94: CD94
+        CD8a: CD8a
+        CD16: CD16
+        CD163: CD163
+        HLA-DR: HLA-Class-2
+        CD31: CD31
+        CD11c: CD11c
+        FOXP3: FoxP3
+        c-kit: c-kit
+        CD14: CD14
+        CD20: CD20
+        CD68: CD68
+        panCK: PanCK
+        TTF1: TTF1
+        CD4: CD4
+        MPO: MPO
+        CD3: CD3
+    channels_dropped:
+        - DNA
+# Tissue-Lymph_Node/Liu_Validation_MIBI:
+#     channels_kept:
+#         CD56: CD56
+#         PAX5: PAX5
+#         PanCK: PanCK
+#         HLA-DR: HLA-Class-2
+#         CD31: CD31
+#         CD11c: CD11c
+#         CD20: CD20
+#         CD45: CD45
+#         CD4: CD4
+#         Vimentin: Vimentin
+#         CD8: CD8
+#         CD68: CD68
+#         CD3: CD3
+#     channels_dropped:
+#         - HLA class I and Na-K-ATPase
+#         - sum_PanCK_CD45
+#         - dsDNA
+#         - B-tubulin
+Tissue-Lymph_Node/McCaffrey_TB_MIBI:
+    channels_kept:
+        IFNg: IFNg
+        CD163: CD163
+        PDL1: PDL1
+        Calprotectin: Calprotectin
+        Collagen I: COL1
+        CD68: CD68
+        CD4: CD4
+        CD103: CD103
+        LAG3: LAG3
+        CD31: CD31
+        CD14: CD14
+        panCK: PanCK
+        Ki67: Ki67
+        CD8: CD8
+        Na-K-ATPase: Na-K-ATPase
+        IDO: IDO
+        CD16: CD16
+        SMA: SMA
+        CD209: CD209
+        CD11c: CD11c
+        iNOS: iNOS
+        CD3: CD3
+        HLA class I: HLA-Class-1
+        mast cell chymase/tryptase: Tryptase
+        HLA-DR: HLA-Class-2
+        E-cadherin: E-cadherin
+        FOXP3: FoxP3
+        CD20: CD20
+        PD1: PD1
+        CD45: CD45
+        MPO: MPO
+        Vimentin: Vimentin
+        gdTCR: gdTCR
+        CD206: CD206
+        CD11b: CD11b
+        CD36: CD36
+    channels_dropped:
+        - H3K9ac
+        - Na
+        - Histone H3
+        - C
+        - Au
+# Tissue-Musculoskeletal/Liu_Validation_MIBI:
+#     channels_kept:
+#         CD56: CD56
+#         PAX5: PAX5
+#         PanCK: PanCK
+#         HLA-DR: HLA-Class-2
+#         CD31: CD31
+#         CD11c: CD11c
+#         CD20: CD20
+#         CD45: CD45
+#         CD4: CD4
+#         Vimentin: Vimentin
+#         CD8: CD8
+#         CD68: CD68
+#         CD3: CD3
+#     channels_dropped:
+#         - HLA class I and Na-K-ATPase
+#         - sum_PanCK_CD45
+#         - dsDNA
+#         - B-tubulin
+Tissue-Nervous/Karimi_Brain_IMC_Glioma:
+    channels_kept:
+        CD94: CD94
+        CD163: CD163
+        c-kit: c-kit
+        CD68: CD68
+        CD4: CD4
+        P2Y12: P2Y12
+        CD31: CD31
+        CD14: CD14
+        panCK: PanCK
+        PMEL: PMEL
+        CD8: CD8
+        CD16: CD16
+        CD11c: CD11c
+        SOX9: SOX9
+        SOX2: SOX2
+        CD3: CD3
+        CD8a: CD8a
+        HLA-DR: HLA-Class-2
+        MART1: MelanA
+        OLIG2: OLIG2
+        FOXP3: FoxP3
+        CD20: CD20
+        GFAP: GFAP
+        MPO: MPO
+    channels_dropped:
+        - DNA
+Tissue-Nervous/Karimi_Brain_IMC_BrM:
+    channels_kept:
+        CD94: CD94
+        CD163: CD163
+        c-kit: c-kit
+        CD68: CD68
+        CD4: CD4
+        P2Y12: P2Y12
+        CD31: CD31
+        CD14: CD14
+        panCK: PanCK
+        PMEL: PMEL
+        CD8: CD8
+        CD16: CD16
+        CD11c: CD11c
+        SOX9: SOX9
+        SOX2: SOX2
+        CD3: CD3
+        CD8a: CD8a
+        HLA-DR: HLA-Class-2
+        MART1: MelanA
+        OLIG2: OLIG2
+        FOXP3: FoxP3
+        CD20: CD20
+        GFAP: GFAP
+        MPO: MPO
+    channels_dropped:
+        - DNA
+Tissue-Nervous/McCaffrey_TB_MIBI:
+    channels_kept:
+        IFNg: IFNg
+        CD163: CD163
+        PDL1: PDL1
+        Calprotectin: Calprotectin
+        Collagen I: COL1
+        CD68: CD68
+        CD4: CD4
+        CD103: CD103
+        LAG3: LAG3
+        CD31: CD31
+        CD14: CD14
+        panCK: PanCK
+        Ki67: Ki67
+        CD8: CD8
+        Na-K-ATPase: Na-K-ATPase
+        IDO: IDO
+        CD16: CD16
+        SMA: SMA
+        CD209: CD209
+        CD11c: CD11c
+        iNOS: iNOS
+        CD3: CD3
+        HLA class I: HLA-Class-1
+        mast cell chymase/tryptase: Tryptase
+        HLA-DR: HLA-Class-2
+        E-cadherin: E-cadherin
+        FOXP3: FoxP3
+        CD20: CD20
+        PD1: PD1
+        CD45: CD45
+        MPO: MPO
+        Vimentin: Vimentin
+        gdTCR: gdTCR
+        CD206: CD206
+        CD11b: CD11b
+        CD36: CD36
+    channels_dropped:
+        - H3K9ac
+        - Na
+        - Histone H3
+        - C
+        - Au
+Tissue-Pancreas/Keren_PDAC_MIBI:
+    channels_kept:
+        MCT1: MCT1
+        p53: p53
+        cleaved Caspase-3: c-Caspase-3
+        Calprotectin: Calprotectin
+        gH2AX: gH2AX
+        PDL1: PDL1
+        IL6: IL6
+        Collagen I: COL1
+        HLA-DRDPDQ: HLA-Class-2
+        CD4: CD4
+        pNRF2: NRF2
+        Amylase: Amylase
+        CD31: CD31
+        Synaptophysin: Synaptophysin
+        CXCL5: CXCL5
+        CD14: CD14
+        panCK: PanCK
+        Ki67: Ki67
+        CD8: CD8
+        Na-K-ATPase: Na-K-ATPase
+        IDO: IDO
+        HIF1A: HIF1A
+        GATA6: GATA6
+        SMA: SMA
+        MMP7: MMP7
+        FASN: FASN
+        CD15: CD15
+        CD3: CD3
+        HLA class I: HLA-Class-1
+        CK5: CK5
+        E-cadherin: E-cadherin
+        FOXP3: FoxP3
+        CD20: CD20
+        FAP: FAP
+        CD45: CD45
+        GLUT1: GLUT1
+        PD1: PD1
+        Vimentin: Vimentin
+    channels_dropped:
+        - dsDNA
+        - LDHA
+# Tissue-Renal/Liu_Validation_MIBI:
+#     channels_kept:
+#         CD56: CD56
+#         PAX5: PAX5
+#         PanCK: PanCK
+#         HLA-DR: HLA-Class-2
+#         CD31: CD31
+#         CD11c: CD11c
+#         CD20: CD20
+#         CD45: CD45
+#         CD4: CD4
+#         Vimentin: Vimentin
+#         CD8: CD8
+#         CD68: CD68
+#         CD3: CD3
+#     channels_dropped:
+#         - HLA class I and Na-K-ATPase
+#         - sum_PanCK_CD45
+#         - dsDNA
+#         - B-tubulin
+Tissue-Reproductive/Greenbaum_Uterus_MIBI:
+    channels_kept:
+        CD80: CD80
+        CD163: CD163
+        CK7: CK7
+        PDL1: PDL1
+        CD68: CD68
+        CD4: CD4
+        GrB: GZMB
+        CD56: CD56
+        HO1: HO1
+        CD57: CD57
+        Galectin9: Galectin9
+        CD31: CD31
+        CD14: CD14
+        Ki67: Ki67
+        CD8: CD8
+        IDO: IDO
+        CD16: CD16
+        HLAG: HLA-G
+        SMA: SMA
+        DCSIGN: CD209
+        TIGIT: TIGIT
+        Tryptase: Tryptase
+        CD11c: CD11c
+        iNOS: iNOS
+        TIM3: TIM3
+        CD3: CD3
+        HLADR: HLA-Class-2
+        Ecad: E-cadherin
+        FoxP3: FoxP3
+        Lck: Lck
+        CD45: CD45
+        PD1: PD1
+        VIM: Vimentin
+        CD44: CD44
+        CD206: CD206
+    channels_dropped:
+        - Si
+        - background
+        - H3
+        - Ta
+        - Co
+        - Na
+        - Ca
+        - Au
+        - Sc
+        - Fe
+        - Ir
+        - CD20 # no B cell reported but one can see marker staining, this marker is also not used in the paper.
+# Tissue-Reproductive/Liu_Validation_MIBI:
+#     channels_kept:
+#         CD56: CD56
+#         PAX5: PAX5
+#         PanCK: PanCK
+#         HLA-DR: HLA-Class-2
+#         CD31: CD31
+#         CD11c: CD11c
+#         CD20: CD20
+#         CD45: CD45
+#         CD4: CD4
+#         Vimentin: Vimentin
+#         CD8: CD8
+#         CD68: CD68
+#         CD3: CD3
+#     channels_dropped:
+#         - HLA class I and Na-K-ATPase
+#         - sum_PanCK_CD45
+#         - dsDNA
+#         - B-tubulin
+Tissue-Reproductive/McCaffrey_TB_MIBI:
+    channels_kept:
+        IFNg: IFNg
+        CD163: CD163
+        PDL1: PDL1
+        Calprotectin: Calprotectin
+        Collagen I: COL1
+        CD68: CD68
+        CD4: CD4
+        CD103: CD103
+        LAG3: LAG3
+        CD31: CD31
+        CD14: CD14
+        panCK: PanCK
+        Ki67: Ki67
+        CD8: CD8
+        Na-K-ATPase: Na-K-ATPase
+        IDO: IDO
+        CD16: CD16
+        SMA: SMA
+        CD209: CD209
+        CD11c: CD11c
+        iNOS: iNOS
+        CD3: CD3
+        HLA class I: HLA-Class-1
+        mast cell chymase/tryptase: Tryptase
+        HLA-DR: HLA-Class-2
+        E-cadherin: E-cadherin
+        FOXP3: FoxP3
+        CD20: CD20
+        PD1: PD1
+        CD45: CD45
+        MPO: MPO
+        Vimentin: Vimentin
+        gdTCR: gdTCR
+        CD206: CD206
+        CD11b: CD11b
+        CD36: CD36
+    channels_dropped:
+        - H3K9ac
+        - Na
+        - Histone H3
+        - C
+        - Au
+Tissue-Skin/Keren_Melanoma_MIBI:
+    channels_kept:
+        IFNg: IFNg
+        CD163: CD163
+        PDL1: PDL1
+        HLA-DRDPDQ: HLA-Class-2
+        CD68: CD68
+        CD4: CD4
+        CD103: CD103
+        SOX10: SOX10
+        Granzyme B: GZMB
+        CD56: CD56
+        HO1: HO1
+        CD57: CD57
+        CD31: CD31
+        CD14: CD14
+        Ki67: Ki67
+        CD8: CD8
+        Na-K-ATPase: Na-K-ATPase
+        IDO: IDO
+        TCF1: TCF1
+        CD16: CD16
+        SMA: SMA
+        CD209: CD209
+        B-catenin: Beta-catenin
+        CD11c: CD11c
+        iNOS: iNOS
+        TIM3: TIM3
+        ICOS: ICOS
+        CD3: CD3
+        HLA class I: HLA-Class-1
+        FOXP3: FoxP3
+        CD20: CD20
+        FAP: FAP
+        CD45: CD45
+        PD1: PD1
+        Vimentin: Vimentin
+        CD45RO: CD45RO
+        CD206: CD206
+    channels_dropped:
+        - Fe-56
+        - Histone H3
+        - sum_MPO_Calprotectin
+# Tissue-Skin/Liu_Validation_MIBI:
+#     channels_kept:
+#         CD56: CD56
+#         PAX5: PAX5
+#         PanCK: PanCK
+#         HLA-DR: HLA-Class-2
+#         CD31: CD31
+#         CD11c: CD11c
+#         CD20: CD20
+#         CD45: CD45
+#         CD4: CD4
+#         Vimentin: Vimentin
+#         CD8: CD8
+#         CD68: CD68
+#         CD3: CD3
+#     channels_dropped:
+#         - HLA class I and Na-K-ATPase
+#         - sum_PanCK_CD45
+#         - dsDNA
+#         - B-tubulin
+# Tissue-Spleen/Liu_Validation_MIBI:
+#     channels_kept:
+#         CD56: CD56
+#         PAX5: PAX5
+#         PanCK: PanCK
+#         HLA-DR: HLA-Class-2
+#         CD31: CD31
+#         CD11c: CD11c
+#         CD20: CD20
+#         CD45: CD45
+#         CD4: CD4
+#         Vimentin: Vimentin
+#         CD8: CD8
+#         CD68: CD68
+#         CD3: CD3
+#     channels_dropped:
+#         - HLA class I and Na-K-ATPase
+#         - sum_PanCK_CD45
+#         - dsDNA
+#         - B-tubulin
+# Tissue-Thymus/Liu_Validation_MIBI:
+#     channels_kept:
+#         CD56: CD56
+#         PAX5: PAX5
+#         PanCK: PanCK
+#         HLA-DR: HLA-Class-2
+#         CD31: CD31
+#         CD11c: CD11c
+#         CD20: CD20
+#         CD45: CD45
+#         CD4: CD4
+#         Vimentin: Vimentin
+#         CD8: CD8
+#         CD68: CD68
+#         CD3: CD3
+#     channels_dropped:
+#         - HLA class I and Na-K-ATPase
+#         - sum_PanCK_CD45
+#         - dsDNA
+#         - B-tubulin
+# Tissue-Tonsil/Liu_Validation_MIBI:
+#     channels_kept:
+#         CD56: CD56
+#         PAX5: PAX5
+#         PanCK: PanCK
+#         HLA-DR: HLA-Class-2
+#         CD31: CD31
+#         CD11c: CD11c
+#         CD20: CD20
+#         CD45: CD45
+#         CD4: CD4
+#         Vimentin: Vimentin
+#         CD8: CD8
+#         CD68: CD68
+#         CD3: CD3
+#     channels_dropped:
+#         - HLA class I and Na-K-ATPase
+#         - sum_PanCK_CD45
+#         - dsDNA
+#         - B-tubulin
+Tissue-GI/Nolan_Stellar_CODEX:
+    channels_kept:
+        CHGA: CgA
+        PDL1: PDL1
+        CD56: CD56
+        CK7: CK7
+        FoxP3: FoxP3
+        CD21: CD21
+        MUC1: MUC1
+        PD1: PD1
+        CD11b: CD11b
+        CD4: CD4
+        Ki67: Ki67
+        CD31: CD31
+        CD25: CD25
+        CDX2: CDX2
+        CD15: CD15
+        CD20: CD20
+        aSMA: SMA
+        CD11c: CD11c
+        S100A4: S100A4
+        IDO: IDO
+        Cytokeratin: PanCK
+        p53: p53
+        MUC5AC: MUC5AC
+        Vimentin: Vimentin
+        EGFR: EGFR
+        CD36: CD36
+        HLADR: HLA-Class-2
+        SOX2: SOX2
+        BCL2: Bcl-2
+        CD79a: CD79a
+        p63: P63
+        MUC2: MUC2
+        CD3: CD3
+        CD45: CD45
+        CD8: CD8
+        CD57: CD57
+        PGA3: PGA3
+        aDefensin5: DEFA5
+        CD68: CD68
+        CD34: CD34
+        CollagenIV: Col4
+        CD38: CD38
+        Podoplanin: PDPN
+        CD163: CD163
+        Bcatenin: Beta-catenin
+        CD138: CD138
+        Arginase1: ARG1
+        CD73: CD73
+        CD206: CD206
+        MUC6: MUC6
+        COX2: COX2
+        MMP9: MMP9
+        H2AX: gH2AX
+        Annexin A1: ANXA1
+        Biglycan: Biglycan
+        Nestin: Nestin
+    channels_dropped:
+        - Hoechst1
+        - Hoechst2
+        - Hoechst3
+        - Hoechst4
+        - Hoechst5
+        - Hoechst6
+        - Hoechst7
+        - Hoechst8
+        - Hoechst9
+        - Hoechst10
+        - Hoechst11
+        - Hoechst12
+        - Hoechst13
+        - Hoechst14
+        - Hoechst15
+        - Hoechst16
+        - Hoechst17
+        - Hoechst18
+        - Hoechst19
+        - Hoechst20
+        - Hoechst21
+        - Hoechst22
+        - Hoechst23
+        - Hoechst24
+        - Hoechst25
+        - Hoechst26
+        - Hoechst27
+        - blank1
+        - blank2
+        - blank3
+        - empty_A488_12
+        - empty_A488_13
+        - empty_A488_14
+        - empty_A488_15
+        - empty_A488_16
+        - empty_A488_17
+        - empty_A488_18
+        - empty_A488_19
+        - empty_A488_20
+        - empty_A488_21
+        - empty_A488_22
+        - empty_A488_23
+        - empty_A488_24
+        - empty_A488_25
+        - empty_A647_25
+        - empty_A488_26
+        - empty_A550_26
+        - empty_A647_26
+        - empty_A488_27
+        - empty_A550_27
+        - HandE1
+        - HandE2
+        - HandE3
+        - HandE4
+        - HKPase
+        - DRAQ5
+Tissue-Tonsil/Nolan_Stellar_CODEX:
+    channels_kept:
+        CHGA: CgA
+        PD-L1: PDL1
+        CD56: CD56
+        CK7: CK7
+        FoxP3: FoxP3
+        CD90: CD90
+        MUC-1/EMA: MUC1
+        PD-1: PD1
+        CD11b: CD11b
+        CD4: CD4
+        Ki-67: Ki67
+        CD31: CD31
+        CD25: CD25
+        CD15: CD15
+        CD20: CD20
+        CD11c: CD11c
+        Nestin: Nestin
+        Collagen I: COL1
+        SOX9: SOX9
+        p16: p16
+        Cytokeratin: PanCK
+        p53: p53
+        MUC-5AC: MUC5AC
+        Vimentin: Vimentin
+        EGFR: EGFR
+        CD36: CD36
+        HLA-DR: HLA-Class-2
+        YAP: YAP
+        BCL-2: Bcl-2
+        CD79a: CD79a
+        FAP: FAP
+        p63: P63
+        MUC-2: MUC2
+        CD3: CD3
+        CD45: CD45
+        CD8: CD8
+        CD57: CD57
+        aDefensin 5: DEFA5
+        CD68: CD68
+        CD34: CD34
+        Collagen IV: Col4
+        CD38: CD38
+        Podoplanin: PDPN
+        CD163: CD163
+        B-catenin: Beta-catenin
+        CD138: CD138
+        Arginase-1: ARG1
+        CD73: CD73
+        CD206: CD206
+        COX-2: COX2
+        MMP-9: MMP9
+        a-SMA: SMA
+        Annexin A1: ANXA1
+        PGA3: PGA3
+        CDX2: CDX2
+    channels_dropped:
+        - Hoechst_1
+        - Hoechst_2
+        - Hoechst_3
+        - Hoechst_4
+        - Hoechst_5
+        - Hoechst_6
+        - Hoechst_7
+        - Hoechst_8
+        - Hoechst_9
+        - Hoechst_10
+        - Hoechst_11
+        - Hoechst_12
+        - Hoechst_13
+        - Hoechst_14
+        - Hoechst_15
+        - Hoechst_16
+        - Hoechst_17
+        - Hoechst_18
+        - Hoechst_19
+        - Hoechst_20
+        - Hoechst_21
+        - Hoechst_22
+        - Hoechst_23
+        - Hoechst_24
+        - Hoechst_25
+        - Hoechst_26
+        - Hoechst_27
+        - Blank_1
+        - Blank_2
+        - Blank_3
+        - Blank_4
+        - Blank_5
+        - Blank_6
+        - Blank_7
+        - Blank_8
+        - Blank_9
+        - Blank_10
+        - Blank_11
+        - Blank_12
+        - Blank_13
+        - Blank_14
+        - Blank_15
+        - Blank_16
+        - Blank_17
+        - Blank_18
+        - Blank_19
+        - Blank_20
+        - Blank_21
+        - Blank_22
+        - Blank_23
+        - pH2A.X
+        - DRAQ5
+        - HandE1
+        - HandE2
+        - HandE3
+        - HandE4
+        - 53BP1
+Tissue-GI/DryadB004_Intestine_CODEX:
+    channels_kept:
+        CD123: CD123
+        CD127: CD127
+        CD138: CD138
+        CD15: CD15
+        CD16: CD16
+        CD163: CD163
+        CD19: CD19
+        CD206: CD206
+        CD21: CD21
+        CD3: CD3
+        CD31: CD31
+        CD34: CD34
+        CD36: CD36
+        CD38: CD38
+        CD4: CD4
+        CD44: CD44
+        CD45: CD45
+        CD45RO: CD45RO
+        CD56: CD56
+        CD57: CD57
+        CD66: CD66
+        CD68: CD68
+        CD69: CD69
+        CD7: CD7
+        CD8: CD8
+        CD90: CD90
+        CK7: CK7
+        MUC1: MUC1
+        MUC2: MUC2
+        NKG2D: NKG2D
+        SOX9: SOX9
+        ASMA: SMA
+        BCL2: Bcl-2
+        CD117: c-kit
+        CHGA: CgA
+        COLLIV: Col4
+        CYTOKERATIN: PanCK
+        ITLN1: Intelectin-1
+        KI67: Ki67
+        PODOPLANIN: PDPN
+        SYNAPTO: Synaptophysin
+        HLADR: HLA-Class-2
+        CD279: PD1
+        VIMENTIN: Vimentin
+        ADEF5: DEFA5
+        CD11C: CD11c
+        CD161: CD161
+        CD294: CD294
+        CD49A: CD49a
+        CD49F: CD49f
+        SOMATOSTATIN: SOMATOSTATIN
+        CDX2: CDX2
+        MUC6: MUC6
+        CD154: CD154
+        GATA3: GATA3
+    channels_dropped:
+        - HOECHST1
+        - LEFTY
+        - DRAQ5
+        - PGP95
+Tissue-GI/DryadB005_Intestine_CODEX:
+    channels_kept:
+        CD123: CD123
+        CD127: CD127
+        CD138: CD138
+        CD15: CD15
+        CD16: CD16
+        CD163: CD163
+        CD19: CD19
+        CD206: CD206
+        CD21: CD21
+        CD25: CD25
+        CD3: CD3
+        CD31: CD31
+        CD34: CD34
+        CD36: CD36
+        CD38: CD38
+        CD4: CD4
+        CD44: CD44
+        CD45: CD45
+        CD45RO: CD45RO
+        CD56: CD56
+        CD57: CD57
+        CD66: CD66
+        CD68: CD68
+        CD69: CD69
+        CD7: CD7
+        CD8: CD8
+        CD90: CD90
+        CK7: CK7
+        FAP: FAP
+        MUC1: MUC1
+        MUC2: MUC2
+        NKG2D: NKG2D
+        PDPN: PDPN
+        SOX9: SOX9
+        ASMA: SMA
+        BCL2: Bcl-2
+        CD117: c-kit
+        CHGA: CgA
+        COLLIV: Col4
+        CYTOKERATIN: PanCK
+        ITLN1: Intelectin-1
+        KI67: Ki67
+        ADEF5: DEFA5
+        CD11C: CD11c
+        CD161: CD161
+        CD33: CD33
+        CD49A: CD49a
+        CD49F: CD49f
+        HLADR: HLA-Class-2
+        VIMENTIN: Vimentin
+        SYNAPT: Synaptophysin
+        LYSOZYME: Lysozyme
+        CDX2: CDX2
+        OLFM4: OLFM4
+        CD98: CD98
+        CD147: CD147
+        CD154: CD154
+    channels_dropped:
+        - DRAQ5
+        - HOECHST1
+        - EMPYT_A488_14
+        - EMPYT_A488_15
+        - EMPYT_A488_16
+        - EMPYT_A488_17
+        - EMPYT_A488_18
+        - EMPYT_A488_19
+        - EMPYT_A488_20
+        - EMPYT_A488_21
+        - EMPYT_A488_22
+        - EMPYT_A488_23
+        - EMPYT_A488_24
+        - EMPYT_A488_26
+        - EMPYT_CY3_24
+        - EMPYT_CY3_26
+Tissue-GI/DryadB006_Intestine_CODEX:
+    channels_kept:
+        CD123: CD123
+        CD127: CD127
+        CD138: CD138
+        CD15: CD15
+        CD16: CD16
+        CD163: CD163
+        CD19: CD19
+        CD206: CD206
+        CD21: CD21
+        CD25: CD25
+        CD3: CD3
+        CD31: CD31
+        CD34: CD34
+        CD36: CD36
+        CD38: CD38
+        CD4: CD4
+        CD44: CD44
+        CD45: CD45
+        CD45RO: CD45RO
+        CD56: CD56
+        CD57: CD57
+        CD66: CD66
+        CD68: CD68
+        CD69: CD69
+        CD7: CD7
+        CD8: CD8
+        CD90: CD90
+        CD98: CD98
+        CK7: CK7
+        FAP: FAP
+        MUC1: MUC1
+        MUC2: MUC2
+        NKG2D: NKG2D
+        PDPN: PDPN
+        SOX9: SOX9
+        ASMA: SMA
+        BCL2: Bcl-2
+        CD117: c-kit
+        CHGA: CgA
+        COLLAGENIV: Col4
+        CYTOKERATIN: PanCK
+        ITLN1: Intelectin-1
+        KI67: Ki67
+        SYNAPTO: Synaptophysin
+        HLADR: HLA-Class-2
+        VIMENTIN: Vimentin
+        ADEF5: DEFA5
+        CD11C: CD11c
+        CD161: CD161
+        CD49A: CD49a
+        CD49F: CD49f
+        OLFM4: OLFM4
+        CD147: CD147
+    channels_dropped:
+        - HOECHST1
+        - DRAQ5
+        - CH2CY13
+        - CH2CY14
+        - CH2CY15
+        - CH2CY16
+        - CH2CY17
+        - CH2CY18
+        - CH2CY19
+        - CH2CY20
+        - CH2CY21
+        - CH2CY22
+        - CH2CY23
+        - CH2CY24
+        - CH3CY23
+        - CH3CY24
+        - CDX2
+Tissue-GI/DryadB008_Intestine_CODEX:
+    channels_kept:
+        ADEFENSIN5: DEFA5
+        ASMA: SMA
+        BCL2: Bcl-2
+        CD117: c-kit
+        CD11C: CD11c
+        CD123: CD123
+        CD127: CD127
+        CD138: CD138
+        CD15: CD15
+        CD16: CD16
+        CD161: CD161
+        CD163: CD163
+        CD19: CD19
+        CD206: CD206
+        CD21: CD21
+        CD25: CD25
+        CD3: CD3
+        CD31: CD31
+        CD34: CD34
+        CD36: CD36
+        CD38: CD38
+        CD4: CD4
+        CD44: CD44
+        CD45: CD45
+        CD45RO: CD45RO
+        CD49A: CD49a
+        CD49F: CD49f
+        CD56: CD56
+        CD57: CD57
+        CD66: CD66
+        CD68: CD68
+        CD69: CD69
+        CD7: CD7
+        CD8: CD8
+        CD90: CD90
+        CHGA: CgA
+        CK7: CK7
+        COLLAGENIV: Col4
+        CYTOKERATIN: PanCK
+        FAP: FAP
+        HLADR: HLA-Class-2
+        ITLN1: Intelectin-1
+        KI67: Ki67
+        MUC1: MUC1
+        MUC2: MUC2
+        NKG2G: NKG2D
+        OLFM4: OLFM4
+        PODOPLANIN: PDPN
+        SOX9: SOX9
+        SYNAPTOPHYSIN: Synaptophysin
+        VIMENTIN: Vimentin
+    channels_dropped:
+        - HOECHST1
+        - HOECSHT10
+        - HOECSHT11
+        - HOECSHT12
+        - HOECSHT13
+        - HOECSHT14
+        - HOECSHT15
+        - HOECSHT16
+        - HOECSHT17
+        - HOECSHT18
+        - HOECSHT19
+        - HOECSHT2
+        - HOECSHT20
+        - HOECSHT21
+        - HOECSHT22
+        - HOECSHT23
+        - HOECSHT24
+        - HOECSHT3
+        - HOECSHT4
+        - HOECSHT5
+        - HOECSHT6
+        - HOECSHT7
+        - HOECSHT8
+        - HOECSHT9
+        - CDX2
+        - DRAQ5
+Tissue-GI/DryadRest_Intestine_CODEX:
+    channels_kept:
+        CD123: CD123
+        CD127: CD127
+        CD138: CD138
+        CD15: CD15
+        CD16: CD16
+        CD163: CD163
+        CD19: CD19
+        CD206: CD206
+        CD21: CD21
+        CD25: CD25
+        CD3: CD3
+        CD31: CD31
+        CD34: CD34
+        CD36: CD36
+        CD38: CD38
+        CD4: CD4
+        CD44: CD44
+        CD45: CD45
+        CD45RO: CD45RO
+        CD56: CD56
+        CD57: CD57
+        CD66: CD66
+        CD68: CD68
+        CD69: CD69
+        CD7: CD7
+        CD8: CD8
+        CD90: CD90
+        CDX2: CDX2
+        FAP: FAP
+        MUC1: MUC1
+        MUC2: MUC2
+        MUC6: MUC6
+        NKG2D: NKG2D
+        OLFM4: OLFM4
+        SOX9: SOX9
+        ADEFENSIN5: DEFA5
+        ASMA: SMA
+        BCL2: Bcl-2
+        CD117: c-kit
+        CHGA: CgA
+        COLLIV: Col4
+        CYTOKERATIN: PanCK
+        ITLN1: Intelectin-1
+        KI67: Ki67
+        PODOPLANIN: PDPN
+        SYNAPTOPHYSIN: Synaptophysin
+        CD11C: CD11c
+        CD161: CD161
+        CD49A: CD49a
+        CD49F: CD49f
+        HLADR: HLA-Class-2
+        VIMENTIN: Vimentin
+    channels_dropped:
+        - HOECHST1
+        - DRAQ5
+Tissue-Spleen/Fan_UF_CODEX:
+    channels_kept:
+        CD107a: CD107a
+        CD11c: CD11c
+        CD15: CD15
+        CD163: CD163
+        CD1c: CD1c
+        CD20: CD20
+        CD21: CD21
+        CD31: CD31
+        CD34: CD34
+        CD35: CD35 
+        CD3e: CD3 # CD3 has subunits (such as CD3e, CD3γ, CD3δ, and CD3ζ)
+        CD4: CD4
+        CD44: CD44
+        CD45: CD45
+        CD45RO: CD45RO
+        CD5: CD5
+        CD68: CD68
+        CD8: CD8
+        CollagenIV: Col4
+        ECAD: E-cadherin
+        FoxP3: FoxP3
+        HLA-DR: HLA-Class-2
+        Ki67: Ki67
+        Lyve1: Lyve1
+        PanCK: PanCK
+        Podoplanin: PDPN
+        SMActin: SMA
+        Vimentin: Vimentin
+    channels_dropped:
+        - DAPI-01
+Tissue-Thymus/Fan_UF_CODEX:
+    channels_kept:
+        CD107a: CD107a
+        CD11c: CD11c
+        CD15: CD15
+        CD163: CD163
+        CD1c: CD1c
+        CD20: CD20
+        CD21: CD21
+        CD31: CD31
+        CD34: CD34
+        CD35: CD35
+        CD3e: CD3
+        CD4: CD4
+        CD44: CD44
+        CD45: CD45
+        CD45RO: CD45RO
+        CD5: CD5
+        CD68: CD68
+        CD8: CD8
+        CollagenIV: Col4
+        ECAD: E-cadherin
+        FoxP3: FoxP3
+        HLA-DR: HLA-Class-2
+        Ki67: Ki67
+        Lyve1: Lyve1
+        PanCK: PanCK
+        Podoplanin: PDPN
+        SMActin: SMA
+        Vimentin: Vimentin
+    channels_dropped:
+        - DAPI-01
+Tissue-Tonsil/Caitlin_DCL_MACSima:
+    channels_kept:
+        CD138_REA929: CD138
+        CD79A_REA1142: CD79a
+        CD68_REA1306: CD68
+        COLLAGENIV_REAL1212: Col4
+        FOXP3_REA1253: FoxP3
+        HLADR_REAL550: HLA-Class-2
+        CD21_REA940: CD21
+        IGD_REA740: IgD # new channel
+        CD20_REA1087: CD20
+        CD209_REAL1087: CD209
+        CD1C_REA694: CD1c
+        CD39_REA739: CD39
+        CD19_REAL106: CD19
+        CD15_VIMC6: CD15
+        CD8_REA734: CD8
+        CD279_REAL531: PD1
+        CD11C_REAL235: CD11c
+        BCL2_REA872: Bcl-2
+        IGM_REAL689: IgM
+        KI67_REA183: Ki67
+        PLASMACELL_REA908: CD138
+        VIMENTIN_REA409: Vimentin
+        CD3_REAL1097: CD3
+        CD27_REA499: CD27 # new channel
+        CYTOKERATIN_CK36H5: CK6
+        CD44_REA690: CD44
+        CD4_REA1307: CD4
+        CD274_PDL1: PDL1
+    channels_dropped:
+        - DAPI_01
+        - DAPI_22
+        - ACTIN_REAL650
+Tissue-GI/Caitlin_DCL_IBEX:
+    channels_kept:
+        EPCAM: EpCAM
+        CD106: CD106 # new channel
+        CD34: CD34
+        CD54: CD54 # new channel
+        LYVE-1: Lyve1
+        CD49A: CD49a
+        HLA-DR: HLA-Class-2
+        CYTOKERATIN (PAN): PanCK
+        CD3: CD3
+        CD45: CD45
+        IGA1: IgA
+        CD44: CD44
+        A-SMA: SMA
+        VIMENTIN: Vimentin
+        LYSOZYME: Lysozyme
+        CD68: CD68
+        CD31: CD31
+        CD8: CD8
+        CD4: CD4
+        IGA2: IgA
+        CD138: CD138
+        PD-1: PD1
+    channels_dropped:
+        - HOECHST 33342
+        - Β-3 TUBULIN
+Tissue-Lymph_Node/Caitlin_Hollmann_CODEX:
+    channels_kept:
+        CD11c: CD11c
+        CD20: CD20
+        CD21: CD21
+        CD3: CD3
+        CD31: CD31
+        CD4: CD4
+        CD45RO: CD45RO
+        CD68: CD68
+        CD8: CD8
+        HLA-DR: HLA-Class-2
+        Ki67: Ki67
+        PanCK: PanCK
+    channels_dropped:
+        - DAPI1
+Tissue-Lymph_Node/Caitlin_DCL_CODEX:
+    channels_kept:
+        CD107A: CD107a
+        CD11C: CD11c
+        CD138: CD138
+        CD15: CD15
+        CD163: CD163
+        CD1C: CD1c
+        CD20: CD20
+        CD21: CD21
+        CD271: CD271 # new channel
+        CD31: CD31
+        CD34: CD34
+        CD35: CD35
+        CD3E: CD3
+        CD4: CD4
+        CD44: CD44
+        CD45: CD45
+        CD45RA: CD45RA
+        CD45RO: CD45RO
+        CD5: CD5
+        CD68: CD68
+        CD69: CD69
+        CD8: CD8
+        COLLAGENIV: Col4
+        CXCR5: CXCR5 # new channel
+        ECAD: E-cadherin
+        FOXP3: FoxP3
+        HLADR: HLA-Class-2
+        IGM: IgM # new channel
+        KI67: Ki67
+        LYVE1: Lyve1
+        PODOPLANIN: PDPN
+        PROX1: PROX1 # new channel
+        SMACTIN: SMA
+        VIMENTIN: Vimentin
+    channels_dropped:
+        - DAPI-02
+Tissue-Pancreas/Caitlin_DCL_CODEX:
+    channels_kept:
+        BETA-CATENIN: Beta-catenin
+        VIM: Vimentin
+        KRT19: CK19
+        PECAM-1: CD31
+        E-CADHERIN: E-cadherin
+        SST: SOMATOSTATIN
+        CHGA: CgA
+        ACTA2: SMA
+    channels_dropped:
+        - IAPP
+        - HOECHST
+        - CGC
+        - CPEP
+Tissue-Reproductive/Caitlin_DCL_MIBI:
+    channels_kept:
+        CD11C: CD11c
+        CD14: CD14
+        CD16: CD16
+        CD163: CD163
+        CD20: CD20
+        CD206: CD206
+        CD3: CD3
+        CD31: CD31
+        CD4: CD4
+        CD44: CD44
+        CD45: CD45
+        CD56: CD56
+        CD57: CD57
+        CD68: CD68
+        CD8: CD8
+        CD80: CD80
+        CK7: CK7
+        DCSIGN: CD209
+        ECAD: E-cadherin
+        FOXP3: FoxP3
+        GALECTIN9: Galectin9
+        GRB: GRB # new channel
+        HLADR: HLA-Class-2
+        HLAG: HLA-G
+        HO1: HO1
+        IDO: IDO
+        KI67: Ki67
+        LCK: Lck
+        NA: Na-K-ATPase
+        PD1: PD1
+        PDL1: PDL1
+        SMA: SMA
+        TIGIT: TIGIT
+        TIM3: TIM3
+        TRYPTASE: Tryptase
+        VIM: Vimentin
+        INOS: iNOS
+    channels_dropped:
+        - AU
+        - BACKGROUND
+        - TA
+        - SC
+        - SI
+        - CA
+        - CO
+        - FE
+        - H3
+        - IR
+Tissue-Renal/Caitlin_DCL_MIBI:
+    channels_kept:
+        CD31: CD31
+        COLIV: Col4
+        NAKATPASE: Na-K-ATPase
+        SMA: SMA
+        VIMENTIN: Vimentin
+        PCAD: P-cadherin # new channel
+    channels_dropped:
+        - AE1
+        - AQP1
+        - CALBINDIN
+        - DAPI_S001
+        - DAPI_S009
+        - S6
+Tissue-Renal/Caitlin_DCL_IBEX:
+    channels_kept:
+        CYTOKERATIN (PAN): PanCK
+        CD34: CD34
+        A-SMA: SMA
+        CD10: CD10 # new channel
+        CD66B: CD66
+        CD15: CD15
+        ACE2: ACE2 # new channel
+        TMPRSS2: TMPRSS2 # new channel
+        LUMICAN: Lumican # new channel
+        SYNDECAN-1: CD138
+        VIMENTIN: Vimentin
+        GLYCOPHORIN A: GYPA # new channel
+    channels_dropped:
+        - HOECHST 33342
+        - PODOCIN
+        - CATHEPSIN L
+        - UROMODULIN
+Tissue-Skin/Caitlin_DCL_CellDIVE:
+    channels_kept:
+        CD3: CD3
+        CD31: CD31
+        CD4: CD4
+        CD68: CD68
+        CD8: CD8
+        COLLAGENIV: Col4
+        FIBRONECTIN: Fibronectin
+        FOXP3: FoxP3
+        KI67: Ki67
+        NAK: Na-K-ATPase
+        P53: p53
+        PCAD: P-cadherin
+        PCK26: PanCK
+        SMA: SMA
+        VIMENTIN: Vimentin
+    channels_dropped:
+        - DAPI_INIT
+        - DAPI_FINAL
+        - PGP9P5
+        - AE1
+        - DDB2
+Tissue-Skin/Caitlin_DCL_IBEX:
+    channels_kept:
+        CD34: CD34
+        CD54: CD54 # new channel
+        LUMICAN: Lumican
+        CD68: CD68
+        CD49A: CD49a
+        HLA-DR: HLA-Class-2
+        CD117: c-kit
+        CD3: CD3
+        LANGERIN: CD207 # new channel
+        CD44: CD44
+        CD31: CD31
+        CD45: CD45
+        CD138: CD138
+        CYTOKERATIN 10: CK10 # new channel
+        CYTOKERATIN 14: CK14
+        VIMENTIN: Vimentin
+        A-SMA: SMA
+    channels_dropped:
+        - HOECHST 33342
+Tissue-Thymus/Caitlin_DCL_CODEX:
+    channels_kept:
+        CD107A: CD107a
+        CD11C: CD11c
+        CD20: CD20
+        CD21: CD21
+        CD31: CD31
+        CD3E: CD3
+        CD4: CD4
+        CD44: CD44
+        CD45: CD45
+        CD45RO: CD45RO
+        CD68: CD68
+        CD8: CD8
+        E-CAD: E-cadherin
+        KI67: Ki67
+        PANCK: PanCK
+        PODOPLAN: PDPN
+    channels_dropped:
+        - DAPI-02
+        - H3
+        - ACTIN
+Tissue-Spleen/Caitlin_DCL_CODEX:
+    channels_kept:
+        CD107A: CD107a
+        CD11C: CD11c
+        CD20: CD20
+        CD21: CD21
+        CD31: CD31
+        CD3E: CD3
+        CD4: CD4
+        CD44: CD44
+        CD45: CD45
+        CD45RO: CD45RO
+        CD68: CD68
+        CD8: CD8
+        E-CAD: E-cadherin
+        KI67: Ki67
+        PANCK: PanCK
+        PODOPLAN: PDPN
+    channels_dropped:
+        - DAPI-02
+        - H3
+        - ACTIN
+Tissue-Spleen/Caitlin_DCL_IBEX:
+    channels_kept:
+        CD21: CD21
+        CD54: CD54
+        CD20: CD20
+        CD68: CD68
+        GLYCOPHORIN A: GYPA
+        CD163: CD163
+        CD49A: CD49a
+        CD138: CD138
+        CD15: CD15
+        HLA-DR: HLA-Class-2
+        CD11C: CD11c
+        VIMENTIN: Vimentin
+        CD4: CD4
+        CD31: CD31
+        KI-67: Ki67
+        CD3: CD3
+        CD8: CD8
+        SPARC: SPARC # new channel
+        CD44: CD44
+        CD61: CD61
+        CD45: CD45
+        A-SMA: SMA
+        LUMICAN: Lumican
+    channels_dropped:
+        - HOECHST 33342
+        - FIBRINOGEN
+Tissue-Liver/Caitlin_DCL_IBEX:
+    channels_kept:
+        CD54: CD54
+        LYVE-1: Lyve1
+        CYTOKERATIN 7: CK7
+        CD34: CD34
+        CD163: CD163
+        CD138: CD138
+        HLA-DR: HLA-Class-2
+        CD68: CD68
+        CD4: CD4
+        KI-67: Ki67
+        CD3: CD3
+        CD8: CD8
+        CD44: CD44
+        VIMENTIN: Vimentin
+        CD49A: CD49a
+        A-SMA: SMA
+        CD45: CD45
+    channels_dropped:
+        - HOECHST 33342
+        - FIBRINOGEN
+        - ASS1
+        - GLUTAMINE SYNTHETASE
+        - Β-3 TUBULIN
+Tissue-Lymph_Node/Unlabled_LN_IMC:  # TODO: new channels to be added
+    channels_kept:
+        CD11B_2279: CD11b
+        CD11C_1890: CD11c
+        CD14_2275: CD14
+        CD15_627: CD15
+        CD163_1863: CD163
+        CD16_1820: CD16
+        CD206: CD206
+        CD20_36: CD20
+        CD274: PDL1
+        CD278: ICOS
+        CD279: PD1
+        CD27_2231: CD27
+        CD31_1859: CD31
+        CD33_2237: CD33
+        CD38_1719: CD38
+        CD39_1954: CD39
+        CD3_1841: CD3
+        CD45RA_732: CD45RA
+        CD45RO_2014: CD45RO
+        CD4_2293: CD4
+        CD57_2020: CD57
+        CD68_77: CD68
+        CD73_2193: CD73
+        CD8A_1718: CD8a
+        FOXP3_115: FoxP3
+        GRANZYM_2215: GZMB
+        HLA-ABC_1960: HLA-Class-1
+        HLA-DR_1849: HLA-Class-2
+        KI-67_142: Ki67
+        LAG-3_1817: LAG3
+        PODOPLA_1463: PDPN
+        SMA_174: SMA
+        TCF1TCF_2221: TCF1
+    channels_dropped:
+        - 191IR
+        - 193IR
+        - CD134_748
+        - CD303_2313
+        - CD40_2255
+        - CLEAVED_198
+        - HISTONE_126
+        - VISTA_2024
+Tissue-Spleen/Unlabled_Spleen_IMC: # TODO: new channels to be added
+    channels_kept:
+        CD11B_2279: CD11b
+        CD11C_1890: CD11c
+        CD14_2275: CD14
+        CD15_627: CD15
+        CD163_1863: CD163
+        CD16_1820: CD16
+        CD206: CD206
+        CD20_36: CD20
+        CD274: PDL1
+        CD278: ICOS
+        CD279: PD1
+        CD27_2231: CD27
+        CD31_1859: CD31
+        CD33_2237: CD33
+        CD38_1719: CD38
+        CD39_1954: CD39
+        CD3_1841: CD3
+        CD45RA_732: CD45RA
+        CD45RO_2014: CD45RO
+        CD4_2293: CD4
+        CD57_2020: CD57
+        CD68_77: CD68
+        CD73_2193: CD73
+        CD8A_1718: CD8a
+        FOXP3_115: FoxP3
+        GRANZYM_2215: GZMB
+        HLA-ABC_1960: HLA-Class-1
+        HLA-DR_1849: HLA-Class-2
+        KI-67_142: Ki67
+        LAG-3_1817: LAG3
+        PODOPLA_1463: PDPN
+        SMA_174: SMA
+        TCF1TCF_2221: TCF1
+    channels_dropped:
+        - 131XE
+        - 134XE
+        - 136BA
+        - 191IR
+        - 193IR
+        - 80ARAR
+        - CD134_748
+        - CD303_2313
+        - CD40_2255
+        - CLEAVED_198
+        - HISTONE_126
+        - VISTA_2024
+Tissue-Thymus/Unlabled_Thymus_IMC: # TODO: new channels to be added
+    channels_kept:
+        CD11B_2279: CD11b
+        CD11C_1890: CD11c
+        CD14_2275: CD14
+        CD15_627: CD15
+        CD163_1863: CD163
+        CD16_1820: CD16
+        CD206: CD206
+        CD20_36: CD20
+        CD274: PDL1
+        CD278: ICOS
+        CD279: PD1
+        CD27_2231: CD27
+        CD31_1859: CD31
+        CD33_2237: CD33
+        CD38_1719: CD38
+        CD39_1954: CD39
+        CD3_1841: CD3
+        CD45RA_732: CD45RA
+        CD45RO_2014: CD45RO
+        CD4_2293: CD4
+        CD57_2020: CD57
+        CD68_77: CD68
+        CD73_2193: CD73
+        CD8A_1718: CD8a
+        FOXP3_115: FoxP3
+        GRANZYM_2215: GZMB
+        HLA-ABC_1960: HLA-Class-1
+        HLA-DR_1849: HLA-Class-2
+        KI-67_142: Ki67
+        LAG-3_1817: LAG3
+        PODOPLA_1463: PDPN
+        SMA_174: SMA
+        TCF1TCF_2221: TCF1
+    channels_dropped:
+        - CD134_748
+        - CD303_2313
+        - CD40_2255
+        - CLEAVED_198
+        - HISTONE_126
+        - VISTA_2024
+Tissue-Musculoskeletal/Unlabled_heart_CODEX: # TODO: new channels to be added
+    channels_kept:
+        ASMA: SMA
+        CD11B: CD11b
+        CD14: CD14
+        CD20: CD20
+        CD31: CD31
+        CD34: CD34
+        CD4: CD4
+        CD45: CD45
+        CD8: CD8
+        ECAD: E-cadherin
+        FAP: FAP
+        FASN: FASN
+        IL7R: CD127
+        KI67: Ki67
+        MRC1: CD206
+        NAKATPASE: Na-K-ATPase
+        VIM: Vimentin
+    channels_dropped:
+        - ADIPO
+        - CCL21
+        - CD3E
+        - CH1CY2
+        - CPM
+        - DCN
+        - MSLN
+        - MYH11
+        - MYH7
+        - MYL4
+        - NPPA
+        - NPR3
+        - PDGFRB
+        - PIEZ02
+        - PLP1
+        - PTPRZ1
+        - RGS5
+        - TOP2A
+        - TTN
+        - TTN2
+Tissue-Reproductive/Unlabled_Uterus_CODEX: # TODO: new channels to be added
+    channels_kept:
+        CD11C: CD11c
+        CD14: CD14
+        CD16: CD16
+        CD163: CD163
+        CD20: CD20
+        CD206: CD206
+        CD3: CD3
+        CD31: CD31
+        CD4: CD4
+        CD44: CD44
+        CD45: CD45
+        CD56: CD56
+        CD57: CD57
+        CD68: CD68
+        CD8: CD8
+        CD80: CD80
+        CK7: CK7
+        DCSIGN: CD209
+        ECAD: E-cadherin
+        FOXP3: FoxP3
+        GALECTIN9: Galectin9
+        GRB: GRB
+        HLADR: HLA-Class-2
+        HLAG: HLA-G
+        HO1: HO1
+        IDO: IDO
+        KI67: Ki67
+        LCK: Lck
+        NA: Na-K-ATPase
+        PD1: PD1
+        PDL1: PDL1
+        SMA: SMA
+        TIGIT: TIGIT
+        TIM3: TIM3
+        TRYPTASE: Tryptase
+        VIM: Vimentin
+        INOS: iNOS
+    channels_dropped:
+        - AU
+        - CA
+        - CO
+        - FE
+        - H3
+        - IR
+        - SC
+        - SI
+        - TA
+        - BACKGROUND
+Tissue-Lung/Caitlin_DCL_CODEX:
+    channels_kept:
+        CD11C: CD11c
+        CD14: CD14
+        CD163: CD163
+        CD1C: CD1c
+        CD20: CD20
+        CD31: CD31
+        CD3E: CD3
+        CD4: CD4
+        CD45: CD45
+        CD68: CD68
+        CD8: CD8
+        COL1A1: COL1
+        COLLAGEN IV: Col4
+        FOXP3: FoxP3
+        HLA-DR: HLA-Class-2
+        KERATIN 5: CK5
+        KI67: Ki67
+        LYVE1: Lyve1
+        MPO: MPO
+        PAN-CYTOKERATIN: PanCK
+        SMA: SMA
+        TPSAB1: Tryptase
+    channels_dropped:
+        - AGER RAGE
+        - CD298
+        - CXCL4
+        - DAPI
+        - SCEL
+        - SFTPC
+Tissue-Tonsil/Caitlin_Hollmann_CODEX:
+    channels_kept:
+        CD11c: CD11c
+        CD20: CD20
+        CD21: CD21
+        CD31: CD31
+        CD3e: CD3
+        CD4: CD4
+        CD45RO: CD45RO
+        CD68: CD68
+        CD8: CD8
+        HLA-DR: HLA-Class-2
+        Ki67: Ki67
+        PanCK: PanCK
+    channels_dropped:
+        - DAPI1
+Tissue-Lymph_Node/Caitlin_DCL_IBEX:
+    channels_kept:
+        A-SMA: SMA
+        CD10: CD10
+        CD138: CD138
+        CD163: CD163
+        CD20: CD20
+        CD21: CD21
+        CD3: CD3
+        CD31: CD31
+        CD34: CD34
+        CD35: CD35
+        CD4: CD4
+        CD44: CD44
+        CD45: CD45
+        CD49A: CD49a
+        CD54: CD54
+        CD68: CD68
+        CD8: CD8
+        CD94: CD94
+        COLLAGEN IV: Col4
+        HLA-DR: HLA-Class-2
+        LYVE-1: Lyve1
+        PD-1: PD1
+        VIMENTIN: Vimentin
+    channels_dropped:
+        - HOECHST 33342
+        - DESMIN
+
+    
