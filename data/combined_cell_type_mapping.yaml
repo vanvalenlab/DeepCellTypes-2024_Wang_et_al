@@ -1,0 +1,27 @@
+Tcell: Tcell
+Treg: Tcell
+CD4T: Tcell
+CD8T: Tcell
+NKT: Tcell
+Bcell: Bcell
+Plasma: Bcell
+NK: NK
+Dendritic: Dendritic
+Mast: Mast
+Neutrophil: Neutrophil
+Macrophage: Macrophage
+Monocyte: Monocyte
+Epithelial: Epithelial
+Goblet: Epithelial
+Paneth: Epithelial
+Enterocyte: Epithelial
+Endocrine: Epithelial
+Endothelial: Endothelial
+LymphaticEndothelial: Endothelial
+BloodVesselEndothelial: Endothelial
+Fibroblast: Fibroblast
+Myofibroblast: Fibroblast
+SmoothMuscle: SmoothMuscle
+Glia: Neuron # No Nerve category, combine Glia with Neuron just for visualization purpose
+Neuron: Neuron
+Tumor: Tumor
